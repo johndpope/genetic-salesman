@@ -19,7 +19,6 @@ def createRoute(cityList):
     route = random.sample(cityList, len(cityList))
     return route
 
-
 def rankRoutes(population):
     fitnessResults = {}
     for i in range(0,len(population)):
@@ -53,9 +52,7 @@ def matingPool(population, selectionResults):
 
 
 def breed(parent1, parent2):
-    child = []
     childP1 = []
-    childP2 = []
 
     geneA = int(random.random() * len(parent1))
     geneB = int(random.random() * len(parent1))
